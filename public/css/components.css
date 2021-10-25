@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --clr-primary: #ee4646;
+    --clr-secondary: #6043e2;
+    --clr-teal: #20c997;
+    --clr-light-gray: #f3f3f3;
+    --clr-deactive: #aaaaaa;
+    --clr-black: #2c2c2c;
+    --clr-white: #f3f6f7;
+    --clr-alice-blue: #6b8996;
+
+    --ff: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--clr-black);
+}
+
+:focus {
+    box-shadow: none !important;
+}
+
+.t-color-primary {
+    color: var(--clr-primary) !important;
+}
+
+.t-color-secondary {
+    color: var(--clr-secondary) !important;
+}
+
+.t-color-teal {
+    color: var(--clr-teal) !important;
+}
+
+.t-color-lightgray {
+    color: var(--clr-light-gray) !important;
+}
+
+.t-color-deactive {
+    color: var(--clr-deactive) !important;
+}
+
+.t-color-black {
+    color: var(--clr-black) !important;
+}
+
+.t-color-white {
+    color: var(--clr-white) !important;
+}
+
+.t-color-aliceblue {
+    color: var(--clr-alice-blue) !important;
+}
+
+.t-normal {
+    font-weight: 400 !important;
+}
+
+.t-semibold {
+    font-weight: 600 !important;
+}
+
+.t-bold {
+    font-weight: 700 !important;
+}
+
+.t-size {
+    font-size: 1rem !important;
+}
+
+.t-size-sm {
+    font-size: 0.875rem !important /* 10px */;
+}
+
+.t-size-md {
+    font-size: 1.625rem !important /* 26px */;
+}
+
+.t-size-lg {
+    font-size: 2.375rem !important /* 38px */;
+}
+
+.bg-color-primary {
+    background-color: var(--clr-primary) !important;
+}
+
+.bg-color-secondary {
+    background-color: var(--clr-secondary) !important;
+}
+
+.bg-color-teal {
+    background-color: var(--clr-teal) !important;
+}
+
+.bg-color-lightgray {
+    background-color: var(--clr-light-gray) !important;
+}
+
+.bg-color-deactive {
+    background-color: var(--clr-deactive) !important;
+}
+
+.bg-color-black {
+    background-color: var(--clr-black) !important;
+}
+
+.bg-color-white {
+    background-color: var(--clr-white) !important;
+}
+
+.bg-color-aliceblue {
+    background-color: var(--clr-alice-blue) !important;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(
+            352.74deg,
+            #ffffff -152.2%,
+            rgba(255, 255, 255, 0) 62.68%
+        ),
+        #149bd4 !important;
+}
+
+.border-color-primary {
+    border-color: var(--clr-primary) !important;
+}
+
+.border-color-secondary {
+    border-color: var(--clr-secondary) !important;
+}
+
+.border-color-teal {
+    border-color: var(--clr-teal) !important;
+}
+
+.border-color-lightgray {
+    border-color: var(--clr-light-gray) !important;
+}
+
+.border-color-deactive {
+    border-color: var(--clr-deactive) !important;
+}
+
+.border-color-black {
+    border-color: var(--clr-black) !important;
+}
+
+.border-color-white {
+    border-color: var(--clr-white) !important;
+}
+
+.border-color-aliceblue {
+    border-color: var(--clr-alice-blue) !important;
+}
+
+.rounded-25rem {
+    border-radius: 2.5rem !important;
+}
+
+.hover-text-primary:hover {
+    color: var(--clr-primary) !important;
+}
+
+.hover-text-secondary:hover {
+    color: var(--clr-secondary) !important;
+}
+
+.hover-text-teal:hover {
+    color: var(--clr-teal) !important;
+}
+
+.hover-text-lightgray:hover {
+    color: var(--clr-light-gray) !important;
+}
+
+.hover-text-deactive:hover {
+    color: var(--clr-deactive) !important;
+}
+
+.hover-text-black:hover {
+    color: var(--clr-black) !important;
+}
+
+.hover-text-white:hover {
+    color: var(--clr-white) !important;
+}
+
+.hover-text-aliceblue:hover {
+    color: var(--clr-alice-blue) !important;
+}
+
+.hover-bg-primary:hover {
+    background-color: var(--clr-primary) !important;
+}
+
+.hover-bg-secondary:hover {
+    background-color: var(--clr-secondary) !important;
+}
+
+.hover-bg-teal:hover {
+    background-color: var(--clr-teal) !important;
+}
+
+.hover-bg-lightgray:hover {
+    background-color: var(--clr-light-gray) !important;
+}
+
+.hover-bg-deactive:hover {
+    background-color: var(--clr-deactive) !important;
+}
+
+.hover-bg-black:hover {
+    background-color: var(--clr-black) !important;
+}
+
+.hover-bg-white:hover {
+    background-color: var(--clr-white) !important;
+}
+
+.hover-bg-aliceblue:hover {
+    background-color: var(--clr-alice-blue) !important;
+}
+
+.hover-border-primary:hover {
+    border-color: var(--clr-primary) !important;
+}
+
+.hover-border-secondary:hover {
+    border-color: var(--clr-secondary) !important;
+}
+
+.hover-border-teal:hover {
+    border-color: var(--clr-teal) !important;
+}
+
+.hover-border-lightgray:hover {
+    border-color: var(--clr-light-gray) !important;
+}
+
+.hover-border-deactive:hover {
+    border-color: var(--clr-deactive) !important;
+}
+
+.hover-border-black:hover {
+    border-color: var(--clr-black) !important;
+}
+
+.hover-border-white:hover {
+    border-color: var(--clr-white) !important;
+}
+
+.hover-border-aliceblue:hover {
+    border-color: var(--clr-alice-blue) !important;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.hover-shadow-sm:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.hover-shadow-md:hover {
+    box-shadow: 0 0.175rem 0.75rem rgba(0, 0, 0, 0.125) !important;
+}
+
+.hover-shadow-lg:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.hover-translateY-1px:hover {
+    transform: translateY(-1px);
+}
+
+.hover-translateY-2px:hover {
+    transform: translateY(-2px);
+}
+
+.hover-translateY-3px:hover {
+    transform: translateY(-3px);
+}
+
+.hover-translateY-4px:hover {
+    transform: translateY(-4px);
+}
+
+.hover-translateY-5px:hover {
+    transform: translateY(-5px);
+}
+
+.shadow-md {
+    box-shadow: 0 0.175rem 0.75rem rgba(0, 0, 0, 0.125) !important;
+}
+
+.w-100vw {
+    width: 100vw !important;
+}
+
+.w-90vw {
+    width: 90vw !important;
+}
+
+.w-80vw {
+    width: 80vw !important;
+}
+
+.w-70vw {
+    width: 70vw !important;
+}
+
+.w-60vw {
+    width: 60vw !important;
+}
+
+.w-50vw {
+    width: 50vw !important;
+}
+
+.w-40vw {
+    width: 40vw !important;
+}
+
+.w-30vw {
+    width: 30vw !important;
+}
+
+.w-20vw {
+    width: 20vw !important;
+}
+
+.w-10vw {
+    width: 10vw !important;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.h-90vh {
+    height: 90vh !important;
+}
+
+.h-80vh {
+    height: 80vh !important;
+}
+
+.h-70vh {
+    height: 70vh !important;
+}
+
+.h-60vh {
+    height: 60vh !important;
+}
+
+.h-50vh {
+    height: 50vh !important;
+}
+
+.h-40vh {
+    height: 40vh !important;
+}
+
+.h-30vh {
+    height: 30vh !important;
+}
+
+.h-20vh {
+    height: 20vh !important;
+}
+
+.h-10vh {
+    height: 10vh !important;
+}
+
+.image-center {
+    object-fit: cover !important;
+    background-position: center !important;
+}
+
+.transition {
+    transition: 300ms !important;
+}
+
+.hover-btn-color-primary:hover {
+    border-color: var(--clr-primary) !important;
+    background: transparent !important;
+    color: var(--clr-primary) !important;
+}
+
+.hover-btn-color-secondary:hover {
+    border-color: var(--clr-secondary) !important;
+    background: transparent !important;
+    color: var(--clr-secondary) !important;
+}
+
+.hover-btn-color-teal:hover {
+    border-color: var(--clr-teal) !important;
+    background: transparent !important;
+    color: var(--clr-teal) !important;
+}
+
+.hover-btn-color-lightgray:hover {
+    border-color: var(--clr-light-gray) !important;
+    background: transparent !important;
+    color: var(--clr-light-gray) !important;
+}
+
+.hover-btn-color-deactive:hover {
+    border-color: var(--clr-deactive) !important;
+    background: transparent !important;
+    color: var(--clr-deactive) !important;
+}
+
+.hover-btn-color-black:hover {
+    border-color: var(--clr-black) !important;
+    background: transparent !important;
+    color: var(--clr-black) !important;
+}
+
+.hover-btn-color-white:hover {
+    border-color: var(--clr-white) !important;
+    background: transparent !important;
+    color: var(--clr-white) !important;
+}
+
+.hover-btn-color-aliceblue:hover {
+    border-color: var(--clr-alice-blue) !important;
+    background: transparent !important;
+    color: var(--clr-alice-blue) !important;
+}
+
+.letspace-1 {
+    letter-spacing: 1px !important;
+}
+
+.letspace-2 {
+    letter-spacing: 2px !important;
+}
+
+.letspace-3 {
+    letter-spacing: 3px !important;
+}
+
+.letspace-4 {
+    letter-spacing: 4px !important;
+}
+
+.letspace-5 {
+    letter-spacing: 5px !important;
+}
+
+@media (min-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+}
