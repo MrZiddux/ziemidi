@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\PembelianController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,5 @@ Route::post('produk/update', [ProdukController::class, 'update'])->name('editpro
 Route::post('produk/delete', [ProdukController::class, 'destroy'])->name('deleteproduk');
 
 Route::get('barang', [BarangController::class, 'index']);
+
+Route::get('pembelian', [PembelianController::class, 'index']);

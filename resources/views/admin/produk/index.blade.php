@@ -62,30 +62,34 @@
                ordering: false,
                responsive: true,
          });
+         $(function () {
+            $(document).on('click', '.btntambah', function(e) {
+               e.preventDefault();
+               let formdata = new FormData(document.getElementById("form-tambah-produk"));
 
-         $(document).on('click', '.btntambah', function(e) {
-            e.preventDefault();
-            const formdata = new FormData(document.getElementById("form-tambah-produk"));
-            $.ajax({
-               type: 'post',
-               url: "{{ route('tambahproduk') }}",
-               data: formdata,
-               success: function(data) {
-                  if(data.success) {
-                     $('#tambah-produk').modal().hide();
-                     swal.fire(
-                        'Berhasil!',
-                        'Data Produk Berhasil Dibuat.',
-                        'success'
-                     ).then((result) => {
-                        if(result.isConfirmed) {
-                           window.location = '/produk'
-                        }
-                     })
-                  } else {
-                     alert('Gagal')
+               $.ajax({
+                  type: 'post',
+                  url: "{{ route('tambahproduk') }}",
+                  processData: false,
+                  contentType: false,
+                  data: formdata,
+                  success: function(data) {
+                     if(data.success) {
+                        $('#tambah-produk').modal().hide();
+                        swal.fire(
+                           'Berhasil!',
+                           'Data Produk Berhasil Dibuat.',
+                           'success'
+                        ).then((result) => {
+                           if(result.isConfirmed) {
+                              window.location = '/produk'
+                           }
+                        })
+                     } else {
+                        alert('Gagal')
+                     }
                   }
-               }
+               })
             })
          })
 

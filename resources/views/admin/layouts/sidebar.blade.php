@@ -41,5 +41,17 @@
             </a>
          </li>
       </ul>
+
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 t-color-deactive t-bold letspace-4">
+         Transaksi
+      </h6>
+      <ul class="nav flex-column">
+         <li class="nav-item py-2 hover-bg-lightgray transition {{ request()->is('pembelian') ? 'bg-color-lightgray' : ''  }}">
+            <a class="nav-link d-flex align-items-center t-size-sm {{ request()->is('pembelian') ? 't-color-secondary' : 'text-muted'  }}" aria-current="page" href="pembelian">
+               <span class="material-icons me-3 t-size {{ request()->is('pembelian') ? 't-color-secondary' : 'text-muted'  }}">category</span>
+               Transaksi Pembelian
+            </a>
+         </li>
+      </ul>
    </div>
 </nav>
