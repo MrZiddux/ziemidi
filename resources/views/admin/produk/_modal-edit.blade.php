@@ -1,4 +1,4 @@
-<div class="modal fade" id="edit-produk{{ $item->id }}" tabindex="-1" aria-labelledby="editproduklabel" aria-hidden="true">
+<div class="modal fade" id="edit-produk" tabindex="-1" aria-labelledby="editproduklabel" aria-hidden="true">
    <div class="modal-dialog modal-lg">
       <div class="modal-content">
          <form action="{{ route('editproduk') }}" method="post">
@@ -9,8 +9,8 @@
             </div>
             <div class="modal-body">
                <div class="form-floating mb-3">
-                  <input type="hidden" name="id" value="{{ $item->id }}">
-                  <input type="text" class="form-control" id="nama_produk" name="nama_produk" placeholder="Kategori Barang..." value="{{ $item->nama_produk }}">
+                  <input type="hidden" name="id" id="id" value="">
+                  <input type="text" class="form-control" id="nama_produk" name="nama_produk" placeholder="Kategori Barang..." value="">
                   <label for="nama_produk">Kategori Barang</label>
                </div>
             </div>

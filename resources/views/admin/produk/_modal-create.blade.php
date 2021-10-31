@@ -15,7 +15,7 @@
             </div>
             <div class="modal-footer">
                <button type="submit" class="btn btn-success btntambah">Simpan</button>
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+               <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
             </div>
          </form>
       </div>

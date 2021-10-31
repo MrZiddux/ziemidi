@@ -1,4 +1,4 @@
-<header class="navbar navbar-dark sticky-top bg-color-primary flex-md-nowrap p-0 shadow">
+<header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
    <div class="container-fluid">
       <button class="navbar-toggler d-md-none collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
