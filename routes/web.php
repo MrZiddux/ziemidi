@@ -5,6 +5,7 @@ use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PemasokController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PembelianController;
+use App\Http\Controllers\PenjualanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,4 +43,4 @@ Route::post('pemasok/tambah', [PemasokController::class, 'store'])->name('tambah
 Route::post('pemasok/update', [PemasokController::class, 'update'])->name('editpemasok');
 Route::post('pemasok/delete', [PemasokController::class, 'destroy'])->name('deletepemasok');
 
-Route::get('pembelian', [PembelianController::class, 'index']);
+Route::get('transaksi', [PenjualanController::class, 'create']);

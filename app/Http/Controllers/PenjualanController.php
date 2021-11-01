@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class PenjualanController extends Controller
 {
-    //
+    public function create()
+    {
+        return view('admin.transaksi.index');
+    }
 }
