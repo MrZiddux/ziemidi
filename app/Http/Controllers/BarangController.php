@@ -16,7 +16,7 @@ class BarangController extends Controller
     public function index()
     {
         $produk = Produk::get();
-        $barang = Barang::get();
+        $barang = Barang::with('produk')->get();
         return view('admin.barang.index', compact('barang', 'produk'));
     }
 

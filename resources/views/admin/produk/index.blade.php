@@ -49,7 +49,7 @@
    </div>
    
    <x-slot name="btm">
-      @include('admin.produk._modal-create')
+      @include('admin.produk._modal-create') 
       @include('admin.produk._modal-edit')
    </x-slot>
 

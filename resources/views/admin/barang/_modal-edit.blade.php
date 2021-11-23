@@ -9,14 +9,14 @@
             </div>
             <div class="modal-body">
                <input type="hidden" id="id" name="id">
-               {{-- <div class="mb-3">
+               <div class="mb-3">
                   <select id="produk_id" class="form-select" aria-label="Default select example" name="produk_id">
-                     <option selected disabled value>Pilih Produk</option>
+                     <option disabled value>Pilih Produk</option>
                      @foreach ($produk as $item)
                         <option value="{{ $item->id }}">{{ $item->nama_produk }}</option>
                      @endforeach
                   </select>
-               </div> --}}
+               </div>
                <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Nama Barang...">
                   <label for="nama_barang">Nama Barang</label>

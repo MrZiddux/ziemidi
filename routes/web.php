@@ -44,3 +44,4 @@ Route::post('pemasok/update', [PemasokController::class, 'update'])->name('editp
 Route::post('pemasok/delete', [PemasokController::class, 'destroy'])->name('deletepemasok');
 
 Route::get('transaksi', [PenjualanController::class, 'create']);
+Route::get('pembelian', [PembelianController::class, 'index']);

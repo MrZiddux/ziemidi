@@ -52,6 +52,12 @@
                Transaksi Penjualan
             </a>
          </li>
+         <li class="nav-item py-2 hover-bg-lightgray transition {{ request()->is('pembelian') ? 'bg-color-lightgray' : ''  }}">
+            <a class="nav-link d-flex align-items-center t-size-sm {{ request()->is('pembelian') ? 't-color-secondary' : 'text-muted'  }}" aria-current="page" href="pembelian">
+               <span class="material-icons me-3 t-size {{ request()->is('pembelian') ? 't-color-secondary' : 'text-muted'  }}">category</span>
+               Transaksi Pembelian
+            </a>
+         </li>
       </ul>
    </div>
 </nav>
